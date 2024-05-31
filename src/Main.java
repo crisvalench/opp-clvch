@@ -1,11 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         //Example for printing method
-        printLine(3);
-        printLine(15);
+        //printLine(3);
+        //printLine(15);
 
-        printSquare(5);
-        printSquare(10);
+        //printSquare(5);
+        //printSquare(10);
+
+        printRectanguleTriangule(4);
+        printRectanguleTriangule(2);
+
+        printRectanguleTriangule1(4);
     }
     public static void printLine(int num){
         System.out.println("-----Printing Line "+ num +" -----");
@@ -19,6 +24,28 @@ public class Main {
         for(int height = 0; height < num; height++){
             for(int weight = 0; weight < num; weight++){
             System.out.print(" * ");
+            }
+            System.out.println(" ");
+        }
+    }
+    public static void printRectanguleTriangule(int num){
+        System.out.println("----------Printing Rectangule Triangule----------");
+        for(int height = 0; height < num; height++){
+            for(int weight = 0; weight < num; weight++){
+                if(weight<=height) {
+                    System.out.print(" * ");
+                }
+            }
+            System.out.println(" ");
+        }
+    }
+    public static void printRectanguleTriangule1(int num) {
+        System.out.println("----------Printing Rectangule Triangule----------");
+        for (int height = 0; height < num; height++) {
+            for (int weight = 0; weight < num; weight++) {
+                if (weight >= height) {
+                    System.out.print(" * ");
+                }
             }
             System.out.println(" ");
         }
