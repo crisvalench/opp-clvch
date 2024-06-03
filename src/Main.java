@@ -1,33 +1,27 @@
+import figures.Line;
+import figures.Square;
+
 public class Main {
     public static void main(String[] args) {
         //Example for printing method
-        //printLine(3);
-        //printLine(15);
+        Line l1 = new Line(3);
+        l1.printLine();
 
-        //printSquare(5);
-        //printSquare(10);
+        Line l2 = new Line(15);
+        l2.printLine();
+
+        Square sq1 = new Square(5);
+        sq1.printSquare();
+
+        Square sq2 = new Square(8);
+        sq1.printSquare();
 
         printRectanguleTriangule(4);
         printRectanguleTriangule(2);
 
         printRectanguleTriangule1(4);
     }
-    public static void printLine(int num){
-        System.out.println("-----Printing Line "+ num +" -----");
-        for(int i = 0; i < num; i++){
-            System.out.print("* ");
-        };
-        System.out.println();
-    }
-    public static void printSquare(int num){
-        System.out.println("-----Printing Square "+ num +" -----");
-        for(int height = 0; height < num; height++){
-            for(int weight = 0; weight < num; weight++){
-            System.out.print(" * ");
-            }
-            System.out.println(" ");
-        }
-    }
+
     public static void printRectanguleTriangule(int num){
         System.out.println("----------Printing Rectangule Triangule----------");
         for(int height = 0; height < num; height++){
