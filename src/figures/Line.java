@@ -9,6 +9,7 @@ public class Line {
     public Line(int lenght) {
         this.length = lenght;
     }
+
     public void printLine(){
         System.out.println("-----Printing Line "+ length +" -----");
         for(int i = 0; i < length; i++){
@@ -16,6 +17,7 @@ public class Line {
         };
         System.out.println();
     }
+
     public int getLength() {
         return length;
     }

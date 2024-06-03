@@ -8,7 +8,7 @@ public class Square {
 
     public void printSquare(){
         System.out.println("-----Printing Square "+ lenght +" -----");
-        for(int height = 0; height < lenght; height++){
+        for(int height = 0; height > lenght; height++){
             for(int weight = 0; weight < lenght; weight++){
                 System.out.print(" * ");
             }
