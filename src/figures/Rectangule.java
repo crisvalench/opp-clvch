@@ -13,12 +13,12 @@ public class Rectangule {
     }
 
     public void printRectangule(){
-        System.out.println("-----Printing Rectangule" + width + "x" + height + "-----");
-        for(int height = 0; height > width; height++){
-            for(int weight = 0; weight < width; weight++){
+        System.out.println("-----Printing Rectangule " + width + " x " + height + " -----");
+        for(int i = 0; i < height; i++){
+            for(int h = 0; h < width; h++){
                 System.out.print(" * ");
             }
-            System.out.println(" ");
+            System.out.println();
         }
     }
 

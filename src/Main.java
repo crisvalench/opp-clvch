@@ -25,19 +25,20 @@ public class Main {
         RectanguleTriangule tr2 = new RectanguleTriangule(8);
         tr2.printRectanguleTriangule();
 
-        //RectanguleTriangule1
-        RectanguleTriangule1 tr11 = new RectanguleTriangule1(4);
-        tr11.printRectanguleTriangule1();
+        //RectanguleTrianguleReverse
+        RectanguleTrianguleReverse trr1 = new RectanguleTrianguleReverse(4);
+        trr1.printRectanguleTrianguleReverse();
 
-        RectanguleTriangule1 tr22 = new RectanguleTriangule1(5);
-        tr22.printRectanguleTriangule1();
+        RectanguleTrianguleReverse trr2 = new RectanguleTrianguleReverse(5);
+        trr2.printRectanguleTrianguleReverse();
 
         //Rectangule
         Rectangule r1 = new Rectangule(6,4);
         r1.printRectangule();
+
+        Rectangule r2 = new Rectangule(7,3);
+        r2.printRectangule();
     }
-
-
 }
 
 

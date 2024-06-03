@@ -1,16 +1,16 @@
 package figures;
 
-public class RectanguleTriangule1 {
+public class RectanguleTrianguleReverse {
     private int num;
 
-    public RectanguleTriangule1() {
+    public RectanguleTrianguleReverse() {
     }
 
-    public RectanguleTriangule1(int num) {
+    public RectanguleTrianguleReverse(int num) {
         this.num = num;
     }
-    public void printRectanguleTriangule1() {
-        System.out.println("----------Printing Rectangule Triangule " + num + "----------");
+    public void printRectanguleTrianguleReverse() {
+        System.out.println("----------Printing Rectangule Triangule Reverse " + num + "----------");
         for (int height = 0; height < num; height++) {
             for (int weight = 0; weight < num; weight++) {
                 if (weight >= height) {
