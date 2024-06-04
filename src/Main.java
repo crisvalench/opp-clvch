@@ -12,7 +12,7 @@ public class Main {
         l2.printLine();
 
         //Square
-        Square sq1 = new Square(5);
+        Square sq1 = new Square(4);
         sq1.printSquare();
 
         Square sq2 = new Square(8);
