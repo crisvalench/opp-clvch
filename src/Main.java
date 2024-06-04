@@ -39,7 +39,7 @@ public class Main {
                     Rectangule rc1 = new Rectangule(width,height);
                     rc1.printRectangule();
             }
-        } while (option != 3);
+        } while (option != 4);
     }
 }
 
