@@ -1,43 +1,45 @@
 import figures.*;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         //Example for printing method
 
         //Line
-        Line l1 = new Line(3);
-        l1.printLine();
+        Scanner scanner = new Scanner(System.in);
+        int option = 0;
+        do {
+            System.out.println("1. Enter a Line");
+            System.out.println("2. Enter a Square");
+            System.out.println("3. Enter a Rectangle");
+            System.out.println("4. Exit");
+            System.out.println("Select a option: ");
+            option = scanner.nextInt();
 
-        Line l2 = new Line(15);
-        l2.printLine();
-
-        //Square
-        Square sq1 = new Square(4);
-        sq1.printSquare();
-
-        Square sq2 = new Square(8);
-        sq1.printSquare();
-
-        //RectanguleTriangule
-        RectanguleTriangule tr1 = new RectanguleTriangule(2);
-        tr1.printRectanguleTriangule();
-
-        RectanguleTriangule tr2 = new RectanguleTriangule(8);
-        tr2.printRectanguleTriangule();
-
-        //RectanguleTrianguleReverse
-        RectanguleTrianguleReverse trr1 = new RectanguleTrianguleReverse(4);
-        trr1.printRectanguleTrianguleReverse();
-
-        RectanguleTrianguleReverse trr2 = new RectanguleTrianguleReverse(5);
-        trr2.printRectanguleTrianguleReverse();
-
-        //Rectangule
-        Rectangule r1 = new Rectangule(6,4);
-        r1.printRectangule();
-
-        Rectangule r2 = new Rectangule(7,3);
-        r2.printRectangule();
+            switch(option){
+                case 1:
+                    System.out.println("Please enter a lenght for Line");
+                    int num = scanner.nextInt();
+                    Line l1 = new Line(num);
+                    l1.printLine();
+                    break;
+                case 2:
+                    System.out.println("Please enter a lenght for Square");
+                    int lenght = scanner.nextInt();
+                    Square sq1 = new Square(lenght);
+                    sq1.printSquare();
+                    break;
+                case 3:
+                    System.out.println("Please enter a width for Rectangule");
+                    int width = scanner.nextInt();
+                    System.out.println("Please enter a height for Rectangule");
+                    int height = scanner.nextInt();
+                    Rectangule rc1 = new Rectangule(width,height);
+                    rc1.printRectangule();
+            }
+        } while (option != 3);
     }
 }
 
