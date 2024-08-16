@@ -1,9 +1,8 @@
 package test;
 import Entities.Person;
-import expection.DuplicateNameExpection;
+import expectionperson.DuplicateNameException;
 
 import java.util.ArrayList;
-import java.util.DuplicateFormatFlagsException;
 import java.util.List;
 
 public class MainPerson {
@@ -19,7 +18,6 @@ public class MainPerson {
         person4.setLastName("Davila");
 
 
-
 //        printPersonProperties(person1);
 //        printPersonProperties(person2);
 //        printPersonProperties(person3);
@@ -27,22 +25,27 @@ public class MainPerson {
 
         List<Person> personList = new ArrayList<>();
         Person person5 = new Person("Cristina", "Noboa", 52);
+        Person person6 = new Person("Lily", "Noboa", 52);
         try{
             addPerson(person1,personList);
             addPerson(person2,personList);
             addPerson(person3,personList);
             addPerson(person4,personList);
             addPerson(person5,personList);
+            addPerson(person6,personList);
 
-        }catch (DuplicateNameExpection de){
+        }catch (DuplicateNameException de){
             System.out.println(de.getMessage());
+        }
+        for(Person people: personList){
+            System.out.println(people);
         }
 
     }
-    public static void addPerson(Person p, List<Person> personList) throws DuplicateNameExpection {
+    public static void addPerson(Person p, List<Person> personList) throws DuplicateNameException {
         for(Person per : personList){
             if(per.getName().equalsIgnoreCase(p.getName())){
-                throw new DuplicateNameExpection("Person Name: " + p.getName() +" , already exists." + personList);
+                throw new DuplicateNameException("Person Name: " + p.getName() +" , already exists." + personList);
             }
         }
         personList.add(p);

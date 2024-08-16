@@ -26,7 +26,7 @@ public class Main {
            // ae.printStackTrace(); Estado del error
             System.out.println("One of the numbers is 0, and / operation can't be executed. Exception Message: " + ae.getMessage());
         } finally {
-            System.out.printf("Division Method Executed");
+            System.out.println("Division Method Executed");
         }
 
 
