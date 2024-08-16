@@ -1,6 +1,9 @@
-import figures.*;
+import figures.Line;
+import figures.Rectangule;
+import figures.RectanguleTriangule;
+import figures.RectanguleTrianguleReverse;
+import figures.Square;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
